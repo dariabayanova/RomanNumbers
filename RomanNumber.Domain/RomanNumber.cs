@@ -9,9 +9,9 @@ namespace RomanNumber.Domain
                 return OneThreeFunc(number);
             }
 
-            if (number == 5)
+            if (number >= 5)
             {
-                return "V";
+                return "V" + OneThreeFunc(number - 5);
             }
 
             return OneThreeFunc(number - 3) + "V";
