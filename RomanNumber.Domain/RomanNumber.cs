@@ -9,7 +9,7 @@ namespace RomanNumber.Domain
                 return "V";
             }
             
-            var romanNumbers = new [] {"I", "II", "III"};
+            var romanNumbers = new [] {"I", "II", "III", "IV"};
             return romanNumbers[number - 1];
         }
     }
