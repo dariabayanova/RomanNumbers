@@ -20,5 +20,13 @@ namespace Tests
             
             Assert.AreEqual("II", result);
         }
+
+        [Test]
+        public void Convert_3_to_III()
+        {
+            var result = RomanNumberConverter.Convert(3);
+                        
+            Assert.AreEqual("III", result);
+        }
     }
 }
