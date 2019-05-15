@@ -5,7 +5,7 @@ namespace Tests
     public class RomanNumberTests
     {
         [Test]
-        public void METHOD()
+        public void Convert_1_to_I()
         {
             var result = GetRomanNumber(1);
             
