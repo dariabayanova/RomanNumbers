@@ -4,7 +4,14 @@ namespace RomanNumber.Domain
     {
         public static string Convert(int i)
         {
-            return "I";
+            if (i == 1)
+            {
+                return "I";
+            }
+            else
+            {
+                return "II";
+            }
         }
     }
 }
