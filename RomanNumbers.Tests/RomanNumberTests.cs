@@ -41,6 +41,12 @@ namespace Tests
             Assert.AreEqual("VI", ToRoman(6));            
         }
 
+        [Test]
+        public void Convert_7_to_VII()
+        {
+            Assert.AreEqual("VII", ToRoman(7));            
+        }
+
         private static string ToRoman(int number)
         {
             return RomanNumberConverter.Convert(number);
