@@ -15,14 +15,19 @@ namespace RomanNumber.Domain
                 return OneThreeFunc(number - 3) + "V";
             }
             
-            if (number >= 5 && number < 10)
+            if (number >= 5 && (number <= (10 - 3 + 1)))
             {
                 return "V" + OneThreeFunc(number - 5);
             }
-            
-            if (number == 10)
+
+
+            if (number < 10)
             {
-                return "X";                
+                return OneThreeFunc(number - 5 - 3) + "X";
+            }
+            if (number >= 10)
+            {
+                return "X";
             }
 
             return "";

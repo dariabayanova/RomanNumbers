@@ -59,6 +59,12 @@ namespace Tests
             Assert.AreEqual("VIII", ToRoman(8));            
         }
 
+        [Test]
+        public void Convert_9_toIX()
+        {
+            Assert.AreEqual("IX", ToRoman(9));
+        }
+
         private static string ToRoman(int number)
         {
             return RomanNumberConverter.Convert(number);
