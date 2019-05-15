@@ -4,8 +4,29 @@ namespace RomanNumber.Domain
     {
         public static string Convert(int number)
         {
-            var romanNumbers = new [] {"I", "II", "III", "IV", "V"};
-            return romanNumbers[number - 1];
+            if (number <= 3)
+            {
+                return OneThreeFunc(number);
+            }
+
+            if (number == 5)
+            {
+                return "V";
+            }
+
+            return OneThreeFunc(number - 3) + "V";
+        }
+
+        private static string OneThreeFunc(int number)
+        {
+            var res = "";
+            
+            for (var i = 0; i < number; i++)
+            {
+                res += "I";
+            }
+
+            return res;
         }
     }
 }
