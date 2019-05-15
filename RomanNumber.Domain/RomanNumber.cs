@@ -4,6 +4,11 @@ namespace RomanNumber.Domain
     {
         public static string Convert(int number)
         {
+            if (number == 10)
+            {
+                return "X";                
+            }
+            
             if (number <= 3)
             {
                 return OneThreeFunc(number);
