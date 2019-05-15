@@ -28,5 +28,13 @@ namespace Tests
                         
             Assert.AreEqual("III", result);
         }
+
+        [Test]
+        public void Convert_5_to_V()
+        {
+            var result = RomanNumberConverter.Convert(5);
+            
+            Assert.AreEqual("V", result);
+        }
     }
 }

@@ -4,6 +4,11 @@ namespace RomanNumber.Domain
     {
         public static string Convert(int number)
         {
+            if (number == 5)
+            {
+                return "V";
+            }
+            
             var romanNumbers = new [] {"I", "II", "III"};
             return romanNumbers[number - 1];
         }
