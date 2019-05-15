@@ -8,33 +8,30 @@ namespace Tests
         [Test]
         public void Convert_1_to_I()
         {
-            var result = RomanNumberConverter.Convert(1);
-            
-            Assert.AreEqual("I", result);
+            Assert.AreEqual("I", ToRoman(1));
         }
 
         [Test]
         public void Convert_2_to_II()
         {
-            var result = RomanNumberConverter.Convert(2);
-            
-            Assert.AreEqual("II", result);
+            Assert.AreEqual("II", ToRoman(2));
         }
 
         [Test]
         public void Convert_3_to_III()
         {
-            var result = RomanNumberConverter.Convert(3);
-                        
-            Assert.AreEqual("III", result);
+            Assert.AreEqual("III", ToRoman(3));
         }
 
         [Test]
         public void Convert_5_to_V()
         {
-            var result = RomanNumberConverter.Convert(5);
-            
-            Assert.AreEqual("V", result);
+            Assert.AreEqual("V", ToRoman(5));
+        }
+
+        private static string ToRoman(int number)
+        {
+            return RomanNumberConverter.Convert(number);
         }
     }
 }
