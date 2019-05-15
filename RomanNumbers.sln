@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbers.Tests", "RomanNumbers.Tests\RomanNumbers.Tests.csproj", "{216BE970-4876-4525-AC6E-B7E7BC1AFA15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumber.Domain", "RomanNumber.Domain\RomanNumber.Domain.csproj", "{7617C0F2-D13E-443A-A5CE-D1036993DD8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{216BE970-4876-4525-AC6E-B7E7BC1AFA15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{216BE970-4876-4525-AC6E-B7E7BC1AFA15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{216BE970-4876-4525-AC6E-B7E7BC1AFA15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7617C0F2-D13E-443A-A5CE-D1036993DD8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7617C0F2-D13E-443A-A5CE-D1036993DD8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7617C0F2-D13E-443A-A5CE-D1036993DD8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7617C0F2-D13E-443A-A5CE-D1036993DD8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

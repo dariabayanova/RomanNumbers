@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using RomanNumber.Domain;
 
 namespace Tests
 {
@@ -7,14 +8,9 @@ namespace Tests
         [Test]
         public void Convert_1_to_I()
         {
-            var result = GetRomanNumber(1);
+            var result = RomanNumberConverter.Convert(1);
             
             Assert.AreEqual("I", result);
-        }
-
-        private string GetRomanNumber(int i)
-        {
-            return "I";
         }
     }
 }
