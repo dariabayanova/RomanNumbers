@@ -14,12 +14,17 @@ namespace RomanNumber.Domain
                 return OneThreeFunc(number);
             }
 
+      
+            if (number < 5)
+            {
+                return OneThreeFunc(number - 3) + "V";
+            }
             if (number >= 5)
             {
                 return "V" + OneThreeFunc(number - 5);
             }
 
-            return OneThreeFunc(number - 3) + "V";
+            return "";
         }
 
         private static string OneThreeFunc(int number)
