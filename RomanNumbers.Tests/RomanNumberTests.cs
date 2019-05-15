@@ -52,6 +52,12 @@ namespace Tests
         {
             Assert.AreEqual("X", ToRoman(10));            
         }
+        
+        [Test]
+        public void Convert_8_to_VIII()
+        {
+            Assert.AreEqual("VIII", ToRoman(8));            
+        }
 
         private static string ToRoman(int number)
         {
