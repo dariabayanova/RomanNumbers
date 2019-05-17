@@ -24,20 +24,24 @@ namespace RomanNumber.Domain
             {
                 return Convert(number - THREE) + "V";
             }
-            if (number >= FIVE && (number <= (TEN - THREE + ONE)))
+            if (number >= FIVE && (number <= FIVE + THREE*ONE))
             {
                 return "V" + Convert(number - FIVE);
             }
 
             if (number < TEN)
             {
-                return Convert(number - FIVE - THREE) + "X";
+                return Convert(number - (FIVE + THREE*ONE)) + "X";
             }
-            if (number >= TEN && number <= FIFTY - TEN)
+            if (number >= TEN && number <= THREE*TEN + FIVE + THREE*ONE + ONE)
             {
                 return "X" + Convert(number - TEN);
             }
 
+            if (number < FIFTY)
+            {
+                return Convert(number - (THREE*TEN)) + "L";
+            }
             if (number >= FIFTY)
             {
                 return "L" + Convert(number - FIFTY);
