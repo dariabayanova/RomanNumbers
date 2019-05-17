@@ -10,43 +10,38 @@ namespace RomanNumber.Domain
             
             if (number <= THREE)
             {
-                return OneThreeFunc(number);
+                var res = "";
+            
+                for (var i = 0; i < number; i++)
+                {
+                    res += "I";
+                }
+
+                return res;
             }
 
       
             if (number < FIVE)
             {
-                return OneThreeFunc(number - THREE) + "V";
+                return Convert(number - THREE) + "V";
             }
             
             if (number >= FIVE && (number <= (TEN - THREE + 1)))
             {
-                return "V" + OneThreeFunc(number - FIVE);
+                return "V" + Convert(number - FIVE);
             }
 
 
             if (number < TEN)
             {
-                return OneThreeFunc(number - FIVE - THREE) + "X";
+                return Convert(number - FIVE - THREE) + "X";
             }
             if (number >= TEN)
             {
-                return "X" + OneThreeFunc(number - TEN);
+                return "X" + Convert(number - TEN);
             }
 
             return "";
-        }
-
-        private static string OneThreeFunc(int number)
-        {
-            var res = "";
-            
-            for (var i = 0; i < number; i++)
-            {
-                res += "I";
-            }
-
-            return res;
         }
     }
 }
