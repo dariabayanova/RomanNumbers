@@ -8,6 +8,7 @@ namespace RomanNumber.Domain
             var THREE = 3;
             var FIVE = 5;
             var TEN = 10;
+            var FIFTY = 50;
             
             if (number < ONE)
             {
@@ -33,12 +34,12 @@ namespace RomanNumber.Domain
             {
                 return Convert(number - FIVE - THREE) + "X";
             }
-            if (number >= TEN && number <= 50 - TEN)
+            if (number >= TEN && number <= FIFTY - TEN)
             {
                 return "X" + Convert(number - TEN);
             }
 
-            if (number >= 50)
+            if (number >= FIFTY)
             {
                 return "L";
             }
