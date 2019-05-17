@@ -4,18 +4,19 @@ namespace RomanNumber.Domain
     {
         public static string Convert(int number)
         {
+            var ONE = 1;
             var THREE = 3;
             var FIVE = 5;
             var TEN = 10;
             
-            if (number <= 0)
+            if (number < ONE)
             {
                 return "";
             }
             
             if (number <= THREE)
             {
-                return "I" + Convert(number - 1);
+                return "I" + Convert(number - ONE);
             }
       
             if (number < FIVE)
@@ -23,7 +24,7 @@ namespace RomanNumber.Domain
                 return Convert(number - THREE) + "V";
             }
             
-            if (number >= FIVE && (number <= (TEN - THREE + 1)))
+            if (number >= FIVE && (number <= (TEN - THREE + ONE)))
             {
                 return "V" + Convert(number - FIVE);
             }
