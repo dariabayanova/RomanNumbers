@@ -15,16 +15,8 @@ namespace RomanNumber.Domain
             
             if (number <= THREE)
             {
-                if (number == 1)
-                {
-                    return "I";
-                }
-                else
-                {
-                    return "I" + Convert(number - 1);
-                }
+                return "I" + Convert(number - 1);
             }
-
       
             if (number < FIVE)
             {
