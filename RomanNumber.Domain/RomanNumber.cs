@@ -24,7 +24,6 @@ namespace RomanNumber.Domain
             {
                 return Convert(number - THREE) + "V";
             }
-            
             if (number >= FIVE && (number <= (TEN - THREE + ONE)))
             {
                 return "V" + Convert(number - FIVE);
