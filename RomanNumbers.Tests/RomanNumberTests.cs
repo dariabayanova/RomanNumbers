@@ -89,6 +89,12 @@ namespace Tests
             Assert.AreEqual("XIX", ToRoman(19));
         }
 
+        [Test]
+        public void Convert_38_to_XXXVIII()
+        {
+            Assert.AreEqual("XXXVIII", ToRoman(38));
+        }
+
         private static string ToRoman(int number)
         {
             return RomanNumberConverter.Convert(number);
