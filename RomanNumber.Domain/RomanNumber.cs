@@ -4,28 +4,29 @@ namespace RomanNumber.Domain
     {
         public static string Convert(int number)
         {
-            var five = 5;
+            var THREE = 3;
+            var FIVE = 5;
             
-            if (number <= 3)
+            if (number <= THREE)
             {
                 return OneThreeFunc(number);
             }
 
       
-            if (number < five)
+            if (number < FIVE)
             {
-                return OneThreeFunc(number - 3) + "V";
+                return OneThreeFunc(number - THREE) + "V";
             }
             
-            if (number >= five && (number <= (10 - 3 + 1)))
+            if (number >= FIVE && (number <= (10 - THREE + 1)))
             {
-                return "V" + OneThreeFunc(number - five);
+                return "V" + OneThreeFunc(number - FIVE);
             }
 
 
             if (number < 10)
             {
-                return OneThreeFunc(number - five - 3) + "X";
+                return OneThreeFunc(number - FIVE - THREE) + "X";
             }
             if (number >= 10)
             {
