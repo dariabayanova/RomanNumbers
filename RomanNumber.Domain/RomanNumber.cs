@@ -29,14 +29,18 @@ namespace RomanNumber.Domain
                 return "V" + Convert(number - FIVE);
             }
 
-
             if (number < TEN)
             {
                 return Convert(number - FIVE - THREE) + "X";
             }
-            if (number >= TEN)
+            if (number >= TEN && number <= 50 - TEN)
             {
                 return "X" + Convert(number - TEN);
+            }
+
+            if (number >= 50)
+            {
+                return "L";
             }
 
             return "";
