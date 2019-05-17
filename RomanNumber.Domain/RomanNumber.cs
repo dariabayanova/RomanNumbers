@@ -6,6 +6,7 @@ namespace RomanNumber.Domain
         {
             var THREE = 3;
             var FIVE = 5;
+            var TEN = 10;
             
             if (number <= THREE)
             {
@@ -18,19 +19,19 @@ namespace RomanNumber.Domain
                 return OneThreeFunc(number - THREE) + "V";
             }
             
-            if (number >= FIVE && (number <= (10 - THREE + 1)))
+            if (number >= FIVE && (number <= (TEN - THREE + 1)))
             {
                 return "V" + OneThreeFunc(number - FIVE);
             }
 
 
-            if (number < 10)
+            if (number < TEN)
             {
                 return OneThreeFunc(number - FIVE - THREE) + "X";
             }
-            if (number >= 10)
+            if (number >= TEN)
             {
-                return "X" + OneThreeFunc(number - 10);
+                return "X" + OneThreeFunc(number - TEN);
             }
 
             return "";
