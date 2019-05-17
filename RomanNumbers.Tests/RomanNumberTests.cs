@@ -64,6 +64,12 @@ namespace Tests
         {
             Assert.AreEqual("IX", ToRoman(9));
         }
+        
+        [Test]
+        public void Convert_13_to_XIII()
+        {
+            Assert.AreEqual("XIII", ToRoman(13));
+        }
 
         private static string ToRoman(int number)
         {
