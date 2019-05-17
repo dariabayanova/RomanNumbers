@@ -112,6 +112,12 @@ namespace Tests
         {
             Assert.AreEqual("L", ToRoman(50));
         }
+        
+        [Test]
+        public void Convert_89_to_LXXXIX()
+        {
+            Assert.AreEqual("LXXXIX", ToRoman(89));
+        }
 
         private static string ToRoman(int number)
         {

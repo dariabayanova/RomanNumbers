@@ -40,7 +40,7 @@ namespace RomanNumber.Domain
 
             if (number >= FIFTY)
             {
-                return "L";
+                return "L" + Convert(number - FIFTY);
             }
 
             return "";
