@@ -25,7 +25,7 @@ namespace RomanNumber.Domain
             {
                 return OneThreeFunc(number - 5 - 3) + "X";
             }
-            if (number >= 10 && (number <= (10 - 5 - 3 + 1)))
+            if (number >= 10)
             {
                 return "X" + OneThreeFunc(number - 10);
             }
