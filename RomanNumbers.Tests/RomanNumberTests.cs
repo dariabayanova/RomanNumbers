@@ -6,6 +6,12 @@ namespace Tests
     public class RomanNumberTests
     {
         [Test]
+        public void Convert_0_to_EMPTY()
+        {
+            Assert.AreEqual("", ToRoman(0));
+        }
+        
+        [Test]
         public void Convert_1_to_I()
         {
             Assert.AreEqual("I", ToRoman(1));

@@ -8,16 +8,21 @@ namespace RomanNumber.Domain
             var FIVE = 5;
             var TEN = 10;
             
+            if (number <= 0)
+            {
+                return "";
+            }
+            
             if (number <= THREE)
             {
-                var res = "";
-            
-                for (var i = 0; i < number; i++)
+                if (number == 1)
                 {
-                    res += "I";
+                    return "I";
                 }
-
-                return res;
+                else
+                {
+                    return "I" + Convert(number - 1);
+                }
             }
 
       
