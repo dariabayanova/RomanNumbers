@@ -14,8 +14,7 @@ namespace RomanNumber.Domain
             {
                 return "";
             }
-            
-            if (number <= THREE)
+            if (number >= ONE && number <= THREE * ONE)
             {
                 return "I" + Convert(number - ONE);
             }
@@ -24,7 +23,7 @@ namespace RomanNumber.Domain
             {
                 return Convert(number - THREE) + "V";
             }
-            if (number >= FIVE && (number <= (TEN - THREE + ONE)))
+            if (number >= FIVE && (number <= FIVE + THREE * ONE))
             {
                 return "V" + Convert(number - FIVE);
             }
@@ -33,14 +32,14 @@ namespace RomanNumber.Domain
             {
                 return Convert(number - FIVE - THREE) + "X";
             }
-            if (number >= TEN && number < FIFTY - TEN)
+            if (number >= TEN && number < TEN + THREE * TEN)
             {
                 return "X" + Convert(number - TEN);
             }
 
             if (number < FIFTY)
             {
-                return Convert(number - 30) + "L";
+                return "XL" + Convert(number - 40);
             }
             if (number >= FIFTY)
             {

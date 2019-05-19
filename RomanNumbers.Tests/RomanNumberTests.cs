@@ -114,6 +114,12 @@ namespace Tests
         }
 
         [Test]
+        public void Convert_48_to_XLVIII()
+        {
+            Assert.AreEqual("XLVIII", ToRoman(48));            
+        }
+
+        [Test]
         public void Convert_50_to_L()
         {
             Assert.AreEqual("L", ToRoman(50));
