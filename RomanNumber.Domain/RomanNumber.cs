@@ -33,11 +33,15 @@ namespace RomanNumber.Domain
             {
                 return Convert(number - FIVE - THREE) + "X";
             }
-            if (number >= TEN && number <= FIFTY - TEN)
+            if (number >= TEN && number < FIFTY - TEN)
             {
                 return "X" + Convert(number - TEN);
             }
 
+            if (number < FIFTY)
+            {
+                return Convert(number - 30) + "L";
+            }
             if (number >= FIFTY)
             {
                 return "L" + Convert(number - FIFTY);
