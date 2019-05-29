@@ -11,23 +11,20 @@ namespace RomanNumber.Domain
             var FIFTY = 50;
 
 
-            if (number >= 40 && number <= 49)
-            {
-                return "XL" + Convert(number - 40);
-            }
+            
             if (number >= FIFTY)
             {
                 return "L" + Convert(number - FIFTY);
             }
 
-            if (number >= TEN - ONE)
+            if (number >= TEN)
             {
-                return Convert(TEN - number) + "X" + Convert(number - TEN);
+                return "X" + Convert(number - TEN);
             }
             
-            if (number >= FIVE - ONE)
+            if (number >= FIVE)
             {
-                return Convert(FIVE - number) + "V" + Convert(number - FIVE);
+                return  "V" + Convert(number - FIVE);
             }
             if (number >= ONE)
             {
